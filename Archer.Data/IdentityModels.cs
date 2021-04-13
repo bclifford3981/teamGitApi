@@ -1,4 +1,7 @@
-﻿using System.Security.Claims;
+﻿using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration;
+using System.Data.Entity.ModelConfiguration.Conventions;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
@@ -29,8 +32,7 @@ namespace Archer.Data
         {
             return new ApplicationDbContext();
         }
-    }
-    public DbSet<VehicleDb> VehicleDbs { get; set; }
+    public DbSet<Archer> Archer { get; set; }
     protected override void OnModelCreating(DbModelBuilder modelBuilder)
     {
         modelBuilder
@@ -41,6 +43,7 @@ namespace Archer.Data
             .Configurations
             .Add(new IdentityUserLoginConfiguration())
             .Add(new IdentityUserRoleConfiguration());
+    }
     }
 }
 public class IdentityUserLoginConfiguration : EntityTypeConfiguration<IdentityUserLogin>
@@ -56,5 +59,4 @@ public class IdentityUserRoleConfiguration : EntityTypeConfiguration<IdentityUse
     {
         HasKey(iur => iur.UserId);
     }
-}
 }
