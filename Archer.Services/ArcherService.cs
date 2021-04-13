@@ -38,17 +38,17 @@ namespace Archer.Services
 
         }
 
-        public IEnumerable<ArcherItem> GetArcher()
+        public IEnumerable<ArcherListItems> GetArcher()
         {
             using (var ctx = new ApplicationDbContext())
             {
-                ArcherListItem query =
+                ArcherListItems query =
                     ctx
                     .Archer
                     .Where(e => e.DbId == _userID)
                     .Select(
                         e =>
-                        new ArcherListItem //Will need to add using statement for model created by Ben
+                        new ArcherListItems //Will need to add using statement for model created by Ben
                         {
                             // set values of each Archer List Item Property equal to e.(property)
 
