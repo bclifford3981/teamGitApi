@@ -1,0 +1,2 @@
+D:\ElevenFiftyProjects\teamGitApi\gitTeamApi\gitTeamApi\obj\Debug\gitTeamApi.csprojAssemblyReference.cache
+D:\ElevenFiftyProjects\teamGitApi\gitTeamApi\gitTeamApi\obj\Debug\gitTeamApi.csproj.CoreCompileInputs.cache
