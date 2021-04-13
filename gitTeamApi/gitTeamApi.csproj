@@ -307,6 +307,20 @@
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Archer.Data\Archer.Data.csproj">
+      <Project>{747a0997-2a1a-4a1e-8593-1d3861d4f1a7}</Project>
+      <Name>Archer.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Archer.Models\Archer.Models.csproj">
+      <Project>{ed004c9d-4f4f-40c5-9ee5-6acc216579c0}</Project>
+      <Name>Archer.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Archer.Services\Archer.Services.csproj">
+      <Project>{965a1595-c91a-4170-a630-0e0ae289a5a8}</Project>
+      <Name>Archer.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

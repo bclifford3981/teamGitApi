@@ -11,40 +11,40 @@ namespace gitTeamApi.Controllers
     {
         public IHttpActionResult Get()
         {
-            NoteService noteService = CreateNoteService();
-            var notes = noteService.GetNotes();
+            ArcherServices archerService = CreateNoteService();
+            var notes = archerService.GetNotes();
             return Ok(notes);
         }
-        public IHttpActionResult Post(NoteCreate note)
+        public IHttpActionResult Post(AgentCreate note)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var service = CreateNoteService();
+            var service = CreateAgentService();
 
             if (!service.CreateNote(note))
                 return InternalServerError();
 
             return Ok();
         }
-        private NoteService CreateNoteService()
+        private ArcherServices CreateAgentId()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());
-            var noteService = new NoteService(userId);
+            var noteService = new ArcherServices(userId);
             return noteService;
         }
         public IHttpActionResult Get(int id)
         {
-            NoteService noteService = CreateNoteService();
-            var note = noteService.GetNoteById(id);
+            ArcherServices archerService = CreateNoteService();
+            var note = archerService.GetNoteById(id);
             return Ok(note);
         }
-        public IHttpActionResult Put(NoteEdit note)
+        public IHttpActionResult Put(AgentEdit note)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var service = CreateNoteService();
+            var service = CreateAgentService();
 
             if (!service.UpdateNote(note))
                 return InternalServerError();
@@ -53,7 +53,7 @@ namespace gitTeamApi.Controllers
         }
         public IHttpActionResult Delete(int id)
         {
-            var service = CreateNoteService();
+            var service = CreateAgentService();
 
             if (!service.DeleteNote(id))
                 return InternalServerError();
