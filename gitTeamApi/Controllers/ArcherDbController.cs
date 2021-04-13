@@ -11,18 +11,18 @@ namespace gitTeamApi.Controllers
     {
         public IHttpActionResult Get()
         {
-            ArcherServices archerService = CreateNoteService();
-            var notes = archerService.GetNotes();
-            return Ok(notes);
+            ArcherServices archerService = CreateAgentService();
+            var agent = archerService.GetAgent();
+            return Ok(agent);
         }
-        public IHttpActionResult Post(AgentCreate note)
+        public IHttpActionResult Post(AgentCreate agent)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
             var service = CreateAgentService();
 
-            if (!service.CreateNote(note))
+            if (!service.CreateAgent(agent))
                 return InternalServerError();
 
             return Ok();
@@ -30,14 +30,14 @@ namespace gitTeamApi.Controllers
         private ArcherServices CreateAgentId()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());
-            var noteService = new ArcherServices(userId);
-            return noteService;
+            var archerServices = new ArcherServices(userId);
+            return archerServices;
         }
         public IHttpActionResult Get(int id)
         {
-            ArcherServices archerService = CreateNoteService();
-            var note = archerService.GetNoteById(id);
-            return Ok(note);
+            ArcherServices archerService = CreateAgentService();
+            var agent = archerService.GetNoteById(id);
+            return Ok(agent);
         }
         public IHttpActionResult Put(AgentEdit note)
         {
@@ -46,12 +46,12 @@ namespace gitTeamApi.Controllers
 
             var service = CreateAgentService();
 
-            if (!service.UpdateNote(note))
+            if (!service.UpdateAgent(agent))
                 return InternalServerError();
 
             return Ok();
         }
-        public IHttpActionResult Delete(int id)
+        public IHttpActionResult DeleteAgent(int id)
         {
             var service = CreateAgentService();
 
