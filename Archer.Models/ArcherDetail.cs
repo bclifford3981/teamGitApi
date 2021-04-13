@@ -5,20 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Archer.Data
+namespace Archer.Models
 {
-    public enum FieldType { Field, Office, Lab}
-    public class Archer
+    public class ArcherDetail
     {
-        [Required]
         public int AgentId { get; set; }
-        [Required]
         public string Name { get; set; }
-        [Key]
-        public Guid DbId { get; set; }
         public FieldType FieldType { get; set; }
+        [Display(Name ="Created")]
         public DateTimeOffset CreatedUtc { get; set; }
+        [Display(Name ="Modified")]
         public DateTimeOffset ModifiedUtc { get; set; }
-
     }
 }
