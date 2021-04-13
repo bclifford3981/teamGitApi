@@ -1,0 +1,6 @@
+D:\ElevenFiftyProjects\teamGitApi\gitTeamApi\Archer.Models\bin\Debug\Archer.Models.dll
+D:\ElevenFiftyProjects\teamGitApi\gitTeamApi\Archer.Models\bin\Debug\Archer.Models.pdb
+D:\ElevenFiftyProjects\teamGitApi\gitTeamApi\Archer.Models\obj\Debug\Archer.Models.csprojAssemblyReference.cache
+D:\ElevenFiftyProjects\teamGitApi\gitTeamApi\Archer.Models\obj\Debug\Archer.Models.csproj.CoreCompileInputs.cache
+D:\ElevenFiftyProjects\teamGitApi\gitTeamApi\Archer.Models\obj\Debug\Archer.Models.dll
+D:\ElevenFiftyProjects\teamGitApi\gitTeamApi\Archer.Models\obj\Debug\Archer.Models.pdb
