@@ -1,0 +1,2 @@
+D:\ElevenFiftyProjects\teamGitApi\gitTeamApi\Archer.Data\obj\Debug\Archer.Data.csprojAssemblyReference.cache
+D:\ElevenFiftyProjects\teamGitApi\gitTeamApi\Archer.Data\obj\Debug\Archer.Data.csproj.CoreCompileInputs.cache
