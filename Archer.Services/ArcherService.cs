@@ -33,6 +33,7 @@ namespace Archer.Services
             {
                 ctx.Archer.Add(entity);
                 return ctx.SaveChanges() == 1;
+
             }
 
 
