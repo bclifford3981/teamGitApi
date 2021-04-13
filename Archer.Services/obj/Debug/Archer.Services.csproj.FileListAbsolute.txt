@@ -1,0 +1,6 @@
+D:\ElevenFiftyProjects\teamGitApi\gitTeamApi\Archer.Services\bin\Debug\Archer.Services.dll
+D:\ElevenFiftyProjects\teamGitApi\gitTeamApi\Archer.Services\bin\Debug\Archer.Services.pdb
+D:\ElevenFiftyProjects\teamGitApi\gitTeamApi\Archer.Services\obj\Debug\Archer.Services.csprojAssemblyReference.cache
+D:\ElevenFiftyProjects\teamGitApi\gitTeamApi\Archer.Services\obj\Debug\Archer.Services.csproj.CoreCompileInputs.cache
+D:\ElevenFiftyProjects\teamGitApi\gitTeamApi\Archer.Services\obj\Debug\Archer.Services.dll
+D:\ElevenFiftyProjects\teamGitApi\gitTeamApi\Archer.Services\obj\Debug\Archer.Services.pdb
