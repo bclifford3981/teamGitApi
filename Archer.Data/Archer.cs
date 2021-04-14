@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Archer.Data
 {
-    public enum FieldType { Field, Office, Lab}
+    public enum FieldType { Field, Office, Lab }
     public class Archer
     {
         [Required]
