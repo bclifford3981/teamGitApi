@@ -57,19 +57,5 @@
     <Compile Include="ArcherService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Archer.Data\Archer.Data.csproj">
-      <Project>{747a0997-2a1a-4a1e-8593-1d3861d4f1a7}</Project>
-      <Name>Archer.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Archer.Models\Archer.Models.csproj">
-      <Project>{ed004c9d-4f4f-40c5-9ee5-6acc216579c0}</Project>
-      <Name>Archer.Models</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

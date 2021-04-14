@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Archer.Models
 {
-    public class Class1
+    public class ArcherEdit
     {
+        public int AgentId { get; set; }
+        public string Name { get; set; }
+        public FieldType FieldType { get; set; }
     }
 }
